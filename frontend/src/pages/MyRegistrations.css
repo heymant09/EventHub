@@ -1,0 +1,38 @@
+.workspace-page { padding-top: 70px; min-height: calc(100vh - 68px); display: flex; flex-direction: column; }
+.workspace-heading { display: flex; align-items: end; justify-content: space-between; margin: 8px 0 27px; }
+.workspace-heading h1 { font: 600 clamp(34px, 4vw, 48px)/1.07 Manrope, sans-serif; letter-spacing: -2.2px; color: #1d3930; margin: 10px 0; }
+.workspace-heading h1 em { font-family: Georgia, serif; font-weight: 400; color: #70865c; }
+.workspace-heading p { font-size: 12px; color: #63746a; margin: 0; }
+.workspace-heading .hero-cta { margin: 0 0 3px; }
+.workspace-state { min-height: 150px; padding: 25px; border: 1px dashed #d9e0d5; border-radius: 7px; display: flex; align-items: center; gap: 16px; color: #44564a; font-size: 12px; }
+.workspace-state strong { font: 600 14px Manrope; }
+.workspace-state p { font-size: 11px; color: #8b978d; margin: 6px 0 10px; }
+.workspace-state .empty-spark { flex: none; }
+.workspace-alert { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding: 12px 15px; border: 1px solid #e5c5b9; border-radius: 5px; background: #fbf1ed; color: #8b4934; font-size: 11px; }
+.workspace-alert button { border: 0; background: none; color: #713a29; text-decoration: underline; cursor: pointer; }
+.registration-list { display: grid; gap: 11px; }
+.registration-card { display: flex; align-items: center; gap: 16px; padding: 16px; background: #fff; border: 1px solid #e8ebe5; border-radius: 7px; }
+.registration-card-symbol { width: 44px; height: 44px; display: grid; place-items: center; flex: none; background: #e9efe1; border-radius: 50%; color: #73855c; font-size: 21px; }
+.registration-card-info { min-width: 0; flex: 1; }
+.registration-card-top { display: flex; align-items: center; gap: 10px; font: 500 8px 'DM Mono', monospace; letter-spacing: 1px; color: #8a9788; }
+.registration-status { padding: 5px 8px; border-radius: 20px; background: #edf2e6; color: #536b45; font-size: 7px; }
+.status-waitlisted { background: #f7f0dd; color: #927536; }
+.status-cancelled { background: #f2e9e6; color: #8e5c4d; }
+.registration-card-info h2 { font: 600 15px Manrope; color: #2b4338; margin: 8px 0 3px; }
+.registration-card-info p { font-size: 10px; color: #89958a; margin: 0 0 8px; }
+.registration-card-info .registration-event-meta { margin-bottom: 5px; color: #66786c; line-height: 1.5; }
+.registration-event-meta span { padding: 0 3px; color: #b0bbb0; }
+.registration-card-info > a { font-size: 10px; color: #62735f; text-decoration: none; }
+.registration-card-info > a span { padding-left: 5px; }
+.cancel-registration { padding: 9px 11px; border: 1px solid #e3e7e0; border-radius: 5px; background: #fff; color: #788278; font: 10px 'DM Sans'; cursor: pointer; }
+.cancel-registration:disabled { opacity: .55; cursor: wait; }
+.workspace-page .page-footer { margin-top: auto; padding-top: 35px; }
+@media (max-width: 650px) {
+  .workspace-page { padding-top: 35px; }
+  .workspace-heading { align-items: flex-start; gap: 15px; flex-direction: column; margin-bottom: 20px; }
+  .workspace-heading h1 { font-size: 36px; }
+  .registration-card { align-items: flex-start; gap: 10px; padding: 12px; }
+  .registration-card-symbol { width: 36px; height: 36px; }
+  .cancel-registration { padding: 8px; font-size: 9px; }
+  .workspace-page .page-footer { margin-top: auto; }
+}

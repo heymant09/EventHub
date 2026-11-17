@@ -1,0 +1,10 @@
+.account-label { color: #748177; font-size: 10px; white-space: nowrap; }
+.account-label b { color: #34453d; font-weight: 600; margin-left: 3px; }
+.account-loading { color: #748177; font-size: 10px; white-space: nowrap; }
+.logout-button { border: 1px solid #dce2d9; border-radius: 5px; background: transparent; color: #34453d; padding: 9px 12px; font: 600 10px 'DM Sans', sans-serif; cursor: pointer; }
+.logout-button:hover { background: #eef2ea; }
+.logout-button:focus-visible { outline: 2px solid #70865c; outline-offset: 2px; }
+@media (max-width: 650px) {
+  .account-label { max-width: 145px; overflow: hidden; text-overflow: ellipsis; }
+  .logout-button { padding: 8px 9px; }
+}
